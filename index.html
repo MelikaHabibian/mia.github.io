@@ -102,7 +102,7 @@
                     <div class="resume-content mr-auto">
                         <h3 class="mb-0">Project Leader</h3>
                         <div class="subheading mb-3">Real-time Drowsiness Detection</div>
-                        <p>Computer Vision project aimed at detecting drowsiness during driving a car based on users’ eye status (closed/open) to prevent accidents. Used MRL eye dataset to process images for a model. Designed a website with Flask framework to capture video as input from the camera and used the model to categorize whether eyes are open or closed.</p>
+                        <p>Computer Vision project aimed at detecting drowsiness during driving a car based on users’ eye status (closed/open) to prevent accidents. Used the UMass Amherst's full facial dataset dataset to process images for a model. Designed a website with Flask framework to capture video as input from the camera and used the model to categorize whether eyes are open or closed.</p>
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary">June 2022 - August 2022</span>
@@ -163,7 +163,7 @@
                     <h3 class="mb-0">Drowsiness Detection</h3>
                     <div class="subheading mb-3"></div>
                     <p>Each year, drowsy driving accounts for about 100,000 crashes, 71,000 injuries and 1,550 fatalities, according to the National Safety Council (NSC). The real number may be much higher, however, as it is difficult to determine whether a driver was drowsy at the time of a crash.</p> <p> Because of this serious problem, in order to make the driver aware before any such accident occurs, I have developed this program. It detects if a live human has had their eyes closed for more than a second. This sort of technology is useful for anybody interested in increased driving safety, including commercial & everyday drivers, car companies, and vehicle-insurance companies. You check out the source code in <a href="https://github.com/Melikoline/Drowsiness-Detection">here!</a></p>
-                    <p>I used and processed more than 3000 images from <a href="http://mrl.cs.vsb.cz/eyedataset">MRL eye dataset</a> to train my drowsiness detection model.</p>
+                    <p>I started this project by collecting data (open and closed eyes) from a number of open-source datasets including the <a href="http://vis-www.cs.umass.edu/lfw/">UMass Amherst's full facial dataset</a>. I fine-tuned a pre-trained model with the collected dataset, which involved recreating the classifier layer and tuning the training hyperparameters. Once the model was prepared, I used OpenCV to capture video frames, and use them as the model's inputs to make a prediction about user's states. Finally, I wrote an honors thesis discussing the motivation, prior work, research procedure, and results of this project.</p>
                     <figure>
                         <img src="img/sample.png" style="width: 400px; height: 300px; vertical-align: middle; margin: 0px 250px ">
                         <figcaption style="color: black; font-size: 0.8em;  vertical-align: middle; margin: 0px 380px ">Sample of my Dataset</figcaption>
